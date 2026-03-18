@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    background: #111;
+    border: 2px solid #0ff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    z-index: 10;
+}
+
+.info div {
+    margin-bottom: 5px;
+    background: rgba(0,0,0,0.5);
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    z-index: 100;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+#gameCanvas:focus {
+    outline: none;
+}
+
+.weapon-active {
+    color: #0f0 !important;
+    font-weight: bold;
+}
